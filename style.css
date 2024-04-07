@@ -81,7 +81,19 @@ nav li:hover {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 1rem;
 }
+#hero .hero_image{
+  width: 50%;
+  height: 80%;
+}
+#hero .hero_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .hero_content {
   display: grid;
   place-items: center;
@@ -141,8 +153,9 @@ nav li:hover {
   padding: 2rem 0;
 }
 .project_container {
-   height: 40vh;
+   min-height: 30vh;
    font-size: 24px;
+   padding: 2rem;
 }
 .grid_item {
   display: grid;
@@ -209,13 +222,16 @@ nav li:hover {
   flex-direction: column;
   gap: 4rem;
   justify-content: center;
+  padding: 2rem;
 }
 
 .top_contact {
   max-width: 800px;
-  display: grid;
+  display: flex;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 .contact_way {
   display: flex;
@@ -279,5 +295,8 @@ footer {
   }
   #contact .container {
     height: 50vh;
+  }
+  .project_container{
+    font-size: 19px;
   }
 }
